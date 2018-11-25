@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:minHeight="@dimen/list_item_height"
+    android:background="@color/tan_background">
+    <ImageView
+        android:id="@+id/imageReference"
+        android:layout_width="@dimen/list_item_height"
+        android:layout_height="@dimen/list_item_height"/>
+    <LinearLayout
+        android:id="@+id/text_Container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:background="@color/category_numbers">
+        <TextView
+            android:id="@+id/English_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            tools:text="English"
+            android:layout_weight="0.5"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:gravity="bottom"
+            />
+        <TextView
+            android:id="@+id/Arabic_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            tools:text="عربـــي"
+            android:layout_weight="0.5"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@android:color/white"
+            android:gravity="top"
+            android:textDirection="ltr"
+            />
+    </LinearLayout>
+</LinearLayout>
